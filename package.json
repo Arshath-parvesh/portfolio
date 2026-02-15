@@ -1,0 +1,28 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio website using React js and Tailwind CSS",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-regular-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
+    "parcel": "^2.16.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-postcss": "^2.16.1",
+    "autoprefixer": "^10.4.21",
+    "buffer": "^6.0.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  },
+  "author": "Arshath parvesh",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}

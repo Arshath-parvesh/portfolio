@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Parcel build output
+dist/
+.parcel-cache/
+
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: local PDF if you don't want to upload resume
+# src/assets/ArshathParvesh_Resume.pdf
