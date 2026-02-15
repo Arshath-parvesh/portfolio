@@ -1,15 +1,39 @@
 import { NavLink } from "react-router-dom";
-const Navigation = () => {
-    return(
+
+const Navigation = ({ isMobile = false, setIsOpen }) => {
+    return (
         <nav>
-            <ul className="flex justify-end gap-[8vw] font-serif text-xl text-bold text-gray-300">
-                <li><NavLink to="/">Home</NavLink></li> 
-                <li><NavLink to="/about">About Me</NavLink></li>
-                <li><NavLink to="/resume">Resume</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
+            <ul
+                className={`
+                    font-serif text-gray-300
+                    ${isMobile
+                        ? "flex flex-col gap-10 text-3xl"
+                        : "flex justify-end gap-[8vw] text-xl font-bold"}
+                `}
+            >
+                <li>
+                    <NavLink to="/" onClick={() => setIsOpen?.(false)}>
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about" onClick={() => setIsOpen?.(false)}>
+                        About Me
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/resume" onClick={() => setIsOpen?.(false)}>
+                        Resume
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/contact" onClick={() => setIsOpen?.(false)}>
+                        Contact
+                    </NavLink>
+                </li>
             </ul>
         </nav>
-    )
-}
+    );
+};
 
 export default Navigation;
